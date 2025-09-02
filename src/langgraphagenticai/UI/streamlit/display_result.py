@@ -40,6 +40,7 @@ class DisplayResultStreamlit:
                 elif type(message)==AIMessage and message.content:
                     with st.chat_message("assistant"):
                         st.write(message.content)
+                        
 
         elif usecase == "AI News":
             frequency = self.user_message
